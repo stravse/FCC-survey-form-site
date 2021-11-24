@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>Document</title>
+</head>
+<body class="body">
+    <div class="body-main">
+      <header class="body-main-header">
+        <h1 id="title">freecodecamp Survey Form</h1>
+        <p id="description"> <i>Thank you for helping us improve the platform</i></p>
+      </header>
+  
+      <form id="survey-form" class="body-main-survey">
+        <div class="survey-element">
+          <label id="name-label" for="name">Name <span class="red-asterisk">*</span> </label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" class="survey-element-input" required />
+        </div>
+        <div class="survey-element">
+          <label id="email-label" for="email">Email <span class="red-asterisk">*</span></label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" class="survey-element-input" required />
+        </div>
+        <div class="survey-element">
+          <label id="number-label" for="number">Age <span class="span--size">(optional)</span> </label>
+          <input type="number" id="number" name="number" min="16" max="100" placeholder="Age" class="survey-element-input" />
+        </div>
+        <div class="survey-element">
+          <p class="ind-item">Current status <span class="red-asterisk">*</span></p>
+          <select name="role" id="dropdown" class="survey-element-input" required>
+            <option>Select your status</option>
+            <option value="highschool">HighSchool Student</option>
+            <option value="college">College Student</option>
+            <option value="full-time">Full time job</option>
+            <option value="part-time">Part time job</option>
+            <option value="learner">Fulltime learner</option>
+            <option value="other">Other</option>
+  
+          </select>
+        </div>
+        <div class="survey-element">
+          <p class="survey-element-para">How satisfied are you with the current course? <span class="red-asterisk">*</span></p>
+          <label><input name="satisfaction" type="radio" value="very satisfied" required> Very Satisfied</label>
+          <label> <input name="satisfaction" type="radio" value="somewhat satisfied "> Somewhat Satisfied</label>
+  
+          <label> <input name="satisfaction" type="radio" value="Neutral" checked> Neutral</label>
+  
+          <label> <input name="satisfaction" type="radio" value="somewhat dissatisfied"> Somewhat Dissatisfied</label>
+  
+          <label> <input name="satisfaction" type="radio" value="very dissatisfied"> Very Dissatisfied</label>
+        </div>
+        <div class="survey-element">
+          <p class="survey-element-para">Where have you learned about us? <span class="red-asterisk">*</span> <span class="span--size">(all that apply) </span></p>
+          <label> <input name="advert" type="checkbox" value="facebook" required> Facebook</label>
+          <label> <input name="advert" type="checkbox" value="twitter"> Twitter</label>
+          <label> <input name="advert" type="checkbox" value="youtube"> Youtube Page</label>
+          <label> <input name="advert" type="checkbox" value="friend"> Friends</label>
+          <label> <input name="advert" type="checkbox" value="reddit"> Reddit</label>
+          <label> <input name="advert" type="checkbox" value="forums"> Game Forums</label>
+          <label> <input name="advert" type="checkbox" value="radio"> Radio advert</label>
+          <label> <input name="advert" type="checkbox" value="bus"> Bus advert</label>
+          <label> <input name="advert" type="checkbox" value="train"> Train advert</label>
+          <label> <input name="advert" type="checkbox" value="store"> Play Store</label>
+        </div>
+        <div class="survey-element survey-element--pad-right">
+          <p>Any comments or suggestion?</p>
+          <textarea name="comment" id="comments" class="survey-element-suggestion" placeholder="Suggestions here..."></textarea>
+  
+        </div>
+        <div class="survey-element">
+          <button type="submit" id="submit" class="survey-element__button">Submit</button>
+        </div>
+        <p class="survey-element-note"><i>The submit button doesn't do anything sorry</i></p>
+  
+      </form>
+      <footer class="body-main-footer">A Project in the <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank" class="body-main-footer-link">Responsive Web Design Course</a> </footer>
+    </div>
+  </body>
+</html>
