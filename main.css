@@ -87,6 +87,9 @@
     cursor: pointer;
     font-size: 1.25rem;
 }
+.survey-element__button:hover{
+    background-color: #d6452c;
+  }
 .survey-element-note{
   margin-top: 2px;
   font-size: 0.75rem;
